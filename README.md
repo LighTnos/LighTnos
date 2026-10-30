@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.com/api?type=waving&color=0:0D1117,100:00F7FF&height=160&section=header&text=UDIT%20AGRAWAL&fontSize=46&fontColor=FFFFFF&animation=fadeIn&fontAlignY=38&desc=Software%20Engineer%20Intern%20%40%20DrongoAI&descAlignY=58&descSize=18" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,100:00F7FF&height=160&section=header&text=UDIT%20AGRAWAL&fontSize=46&fontColor=FFFFFF&animation=fadeIn&fontAlignY=38&desc=Software%20Engineer%20Intern%20%40%20DrongoAI&descAlignY=58&descSize=18" />
 
 </div>
 
@@ -18,7 +18,7 @@ Fortune     : "I am too lazy." — Udit, probably
 ```
 
 <div align="center">
-<img src="https://capsule-render.com/api?type=rect&color=0:0D1117,100:FF2D95&height=3&width=1000" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D1117,100:FF2D95&height=3&width=1000" />
 </div>
 
 ```bash
@@ -34,7 +34,7 @@ guest@udit-agrawal:~$ git log --oneline --graph --all
 ```
 
 <div align="center">
-<img src="https://capsule-render.com/api?type=rect&color=0:0D1117,100:8A2BE2&height=3&width=1000" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D1117,100:8A2BE2&height=3&width=1000" />
 </div>
 
 ```bash
@@ -72,7 +72,7 @@ guest@udit-agrawal:~$ cat package.json
 </p>
 
 <div align="center">
-<img src="https://capsule-render.com/api?type=rect&color=0:0D1117,100:00F7FF&height=3&width=1000" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D1117,100:00F7FF&height=3&width=1000" />
 </div>
 
 ```bash
@@ -80,34 +80,23 @@ guest@udit-agrawal:~$ ./analytics.sh --live
 ```
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=LighTnos&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00F7FF&icon_color=FF2D95" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=LighTnos&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00F7FF" />
+  <img height="165" src="https://github-readme-stats-eight-sand.vercel.app/api?username=LighTnos&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00F7FF&icon_color=FF2D95" />
 </p>
 
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=LighTnos&theme=tokyonight&hide_border=true&background=0D1117&ring=FF2D95&fire=00F7FF" alt="streak" />
 </p>
 
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=LighTnos&theme=react-dark&hide_border=true&bg_color=0d1117&color=00F7FF&line=FF2D95&point=ffffff" />
-</p>
-
 <details>
 <summary><code>guest@udit-agrawal:~$ cat achievements.log</code></summary>
 <br>
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=LighTnos&theme=darkhub&no-frame=true&margin-w=10&row=1" />
+  <img src="https://github-trophies.vercel.app/?username=LighTnos&theme=darkhub&no-frame=true&margin-w=10&row=1" />
 </p>
 </details>
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/LighTnos/LighTnos/output/github-contribution-grid-snake-dark.svg" alt="contribution snake" />
-</p>
-
-<sub>Snake requires the <a href="https://github.com/Platane/snk"><code>Platane/snk</code></a> Action publishing to the <code>output</code> branch of <code>LighTnos/LighTnos</code>.</sub>
-
 <div align="center">
-<img src="https://capsule-render.com/api?type=rect&color=0:0D1117,100:FF2D95&height=3&width=1000" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D1117,100:FF2D95&height=3&width=1000" />
 </div>
 
 ```bash
@@ -130,9 +119,7 @@ PORT     STATE   SERVICE
 
 <div align="center">
 
-<img src="https://capsule-render.com/api?type=waving&color=0:00F7FF,100:0D1117&height=100&section=footer" />
-
-![Profile Views](https://komarev.com/ghpvc/?username=LighTnos&color=00F7FF&style=for-the-badge&label=PROFILE+VIEWS)
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00F7FF,100:0D1117&height=100&section=footer" />
 
 <sub>"Talk is cheap. Show me the code." — Linus Torvalds</sub>
 
