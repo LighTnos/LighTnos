@@ -1,5 +1,7 @@
 <div align="center">
 
+![Banner](https://cdna.artstation.com/p/assets/images/images/028/102/058/original/pixel-jeff-matrix-s.gif?1593487263)
+
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,100:00F7FF&height=160&section=header&text=UDIT%20AGRAWAL&fontSize=46&fontColor=FFFFFF&animation=fadeIn&fontAlignY=38&desc=Software%20Engineer%20Intern%20%40%20DrongoAI&descAlignY=58&descSize=18" />
 
 </div>
