@@ -2,127 +2,69 @@
 
 ![Banner](https://cdna.artstation.com/p/assets/images/images/028/102/058/original/pixel-jeff-matrix-s.gif?1593487263)
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,100:00F7FF&height=160&section=header&text=UDIT%20AGRAWAL&fontSize=46&fontColor=FFFFFF&animation=fadeIn&fontAlignY=38&desc=Software%20Engineer%20Intern%20%40%20DrongoAI&descAlignY=58&descSize=18" />
+<img src="./assets/whiskey-card-3d.svg" width="860" alt="3D whiskey coder card" />
 
 </div>
 
-```bash
-guest@udit-agrawal:~$ whoami
-```
-```text
-udit-agrawal
+<br />
 
-Role        : Software Engineer Intern @ DrongoAI
-Stack       : React · Node.js · Express · MongoDB · Tailwind CSS
-Exploring   : Python & Machine Learning
-Pronouns    : He/Him
-Fortune     : "I am too lazy." — Udit, probably
-```
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <img src="https://img.shields.io/badge/Identity-0B0B0F?style=for-the-badge&logo=linux&logoColor=F5C16C" />
+      <br /><br />
+      <code>Role</code> Software Engineer Intern @ DrongoAI<br />
+      <code>Stack</code> MERN + Tailwind CSS<br />
+      <code>Focus</code> Clean architecture, product-speed shipping<br />
+      <code>Learning</code> Python for ML systems
+    </td>
+    <td width="50%" valign="top">
+      <img src="https://img.shields.io/badge/Signals-0B0B0F?style=for-the-badge&logo=radar&logoColor=7BE0FF" />
+      <br /><br />
+      <a href="https://www.linkedin.com/in/udit-agrawal-141292276/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" /></a>
+      <a href="https://github.com/LighTnos" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" /></a>
+      <br />
+      <img src="https://img.shields.io/badge/Build%20Style-Minimal%20UI%20%2B%20Strong%20Logic-171A21?style=flat-square&logo=vercel&logoColor=white" />
+      <br />
+      <img src="https://img.shields.io/badge/Coding%20Mode-Focus%20%7C%20Flow%20%7C%20Execution-171A21?style=flat-square&logo=neovim&logoColor=57A143" />
+    </td>
+  </tr>
+</table>
+
+<br />
+
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <img src="https://img.shields.io/badge/Frontend%20Bento-111111?style=for-the-badge&logo=react&logoColor=61DAFB" />
+      <br /><br />
+      <img src="https://skillicons.dev/icons?i=react,tailwind,html,css,bootstrap&perline=3" />
+    </td>
+    <td width="33%" valign="top">
+      <img src="https://img.shields.io/badge/Backend%20Bento-111111?style=for-the-badge&logo=nodedotjs&logoColor=5FA04E" />
+      <br /><br />
+      <img src="https://skillicons.dev/icons?i=nodejs,express,mongodb,javascript,python&perline=3" />
+    </td>
+    <td width="33%" valign="top">
+      <img src="https://img.shields.io/badge/Tooling%20Bento-111111?style=for-the-badge&logo=git&logoColor=F05032" />
+      <br /><br />
+      <img src="https://skillicons.dev/icons?i=git,github,vscode,java,c&perline=3" />
+    </td>
+  </tr>
+</table>
+
+<br />
 
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D1117,100:FF2D95&height=3&width=1000" />
+  <img src="https://img.shields.io/badge/3D%20Contribution%20Map-0B0B0F?style=for-the-badge&logo=github&logoColor=9D7BFF" />
+  <br /><br />
+  <img src="./profile-3d-contrib/profile-night-rainbow.svg" alt="3D contribution graph" />
 </div>
 
-```bash
-guest@udit-agrawal:~$ git log --oneline --graph --all
-```
-```text
-* a1b2c3d (HEAD -> main, origin/main) Joined DrongoAI as SWE Intern
-* 9f8e7d6 Started exploring Machine Learning with Python
-* 5c4b3a2 Got comfortable shipping full MERN stack apps
-* 1e2d3c4 Learned component design with Tailwind CSS
-* 7f6e5d4 Picked up React and never looked back
-* 0a1b2c3 Initial commit — "Hello, World!"
-```
+<br />
 
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D1117,100:8A2BE2&height=3&width=1000" />
+  <img height="165" src="https://github-readme-stats-eight-sand.vercel.app/api?username=LighTnos&show_icons=true&theme=dark&hide_border=true&bg_color=0B0B0F&title_color=F5C16C&icon_color=7BE0FF&text_color=E9E9EA" />
+  <img height="165" src="https://github-readme-stats-eight-sand.vercel.app/api/top-langs/?username=LighTnos&layout=compact&theme=dark&hide_border=true&bg_color=0B0B0F&title_color=F5C16C&text_color=E9E9EA&hide=HTML,CSS,C%23,PHP" />
 </div>
 
-```bash
-guest@udit-agrawal:~$ cat package.json
-```
-```json
-{
-  "name": "udit-agrawal",
-  "version": "2.0.0",
-  "role": "Software Engineer Intern @ DrongoAI",
-  "dependencies": {
-    "react": "^18.0.0",
-    "node": "^20.0.0",
-    "express": "^4.18.0",
-    "mongodb": "^7.0.0",
-    "tailwindcss": "^3.4.0"
-  },
-  "devDependencies": {
-    "python": "^3.12.0",
-    "java": "^21.0.0",
-    "c": "ISO/IEC 9899",
-    "git": "latest",
-    "vscode": "stable"
-  },
-  "scripts": {
-    "learn": "python ml_journey.py --topic=machine-learning",
-    "build": "npm run mern-stack -- --clean --scalable",
-    "connect": "open https://linkedin.com/in/udit-agrawal-141292276"
-  }
-}
-```
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=react,nodejs,express,mongodb,tailwind,html,css,bootstrap,javascript,python,java,c,git,github,vscode&perline=8" />
-</p>
-
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D1117,100:00F7FF&height=3&width=1000" />
-</div>
-
-```bash
-guest@udit-agrawal:~$ ./analytics.sh --live
-```
-
-<p align="center">
-  <img height="165" src="https://github-readme-stats-eight-sand.vercel.app/api?username=LighTnos&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00F7FF&icon_color=FF2D95" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=LighTnos&theme=tokyonight&hide_border=true&background=0D1117&ring=FF2D95&fire=00F7FF" alt="streak" />
-</p>
-
-<details>
-<summary><code>guest@udit-agrawal:~$ cat achievements.log</code></summary>
-<br>
-<p align="center">
-  <img src="https://github-trophies.vercel.app/?username=LighTnos&theme=darkhub&no-frame=true&margin-w=10&row=1" />
-</p>
-</details>
-
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D1117,100:FF2D95&height=3&width=1000" />
-</div>
-
-```bash
-guest@udit-agrawal:~$ nmap -p 22,443 udit-agrawal.dev
-```
-```text
-PORT     STATE   SERVICE
-22/tcp   open    github     -> github.com/LighTnos
-443/tcp  open    linkedin   -> linkedin.com/in/udit-agrawal-141292276
-```
-
-<p align="center">
-  <a href="https://www.linkedin.com/in/udit-agrawal-141292276/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-  <a href="https://github.com/LighTnos" target="_blank">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
-  </a>
-</p>
-
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00F7FF,100:0D1117&height=100&section=footer" />
-
-<sub>"Talk is cheap. Show me the code." — Linus Torvalds</sub>
-
-</div>
