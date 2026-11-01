@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/midnight-flow.svg" width="980" alt="Midnight Coder unified profile flow" />
+  <img src="./assets/midnight-flow.svg" width="980" alt="Midnight Engineer unified profile flow" />
 </div>
 
 <div align="center">

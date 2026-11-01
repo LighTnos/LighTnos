@@ -18,7 +18,7 @@
   <rect x="28" y="24" width="1144" height="2232" rx="28" fill="url(#bg)" stroke="#242427"/>
 
   <rect x="80" y="72" width="1040" height="380" rx="20" fill="url(#soft)" stroke="#2C2D31"/>
-  <text x="120" y="132" font-family="Georgia, serif" font-size="26" fill="#D6CEC3">The Midnight Coder</text>
+  <text x="120" y="132" font-family="Georgia, serif" font-size="26" fill="#D6CEC3">The Midnight Engineer</text>
   <text x="120" y="182" font-family="JetBrains Mono, monospace" font-size="58" fill="#ECE8E1">UDIT AGRAWAL</text>
   <text x="120" y="218" font-family="JetBrains Mono, monospace" font-size="18" fill="#B7AEA3">Software Engineer Intern @ DrongoAI</text>
   <text x="120" y="272" font-family="JetBrains Mono, monospace" font-size="16" fill="#D8D3CC">guest@midnight:~$ init --focus</text>
@@ -26,11 +26,20 @@
   <text x="120" y="334" font-family="JetBrains Mono, monospace" font-size="16" fill="#C7C1B8">Compiling interfaces, APIs, and product intent...</text>
   <text x="120" y="364" font-family="JetBrains Mono, monospace" font-size="16" fill="#C7C1B8">Status: steady.</text>
 
-  <path d="M820 132 C900 92, 1030 120, 1050 220 C1066 296, 1008 354, 940 364 C872 374, 824 336, 818 284" fill="none" stroke="#3E362D" stroke-width="2"/>
-  <rect x="876" y="208" width="150" height="120" rx="18" fill="#191A1D" stroke="#363840"/>
-  <path d="M892 252 H1010 L1016 300 Q1018 312 1008 316 H900 Q890 312 892 300 Z" fill="#9B6730">
-    <animate attributeName="d" values="M892 252 H1010 L1016 300 Q1018 312 1008 316 H900 Q890 312 892 300 Z;M892 257 H1010 L1016 302 Q1018 314 1008 318 H900 Q890 314 892 302 Z;M892 252 H1010 L1016 300 Q1018 312 1008 316 H900 Q890 312 892 300 Z" dur="5s" repeatCount="indefinite"/>
-  </path>
+  <rect x="838" y="168" width="248" height="202" rx="16" fill="#17181B" stroke="#303238"/>
+  <rect x="858" y="190" width="208" height="24" rx="8" fill="#111214"/>
+  <circle cx="874" cy="202" r="4" fill="#5A5D64"/>
+  <circle cx="888" cy="202" r="4" fill="#4E5158"/>
+  <circle cx="902" cy="202" r="4" fill="#43464D"/>
+  <text x="918" y="207" font-family="JetBrains Mono, monospace" font-size="10" fill="#8C919C">runtime.log</text>
+  <text x="858" y="238" font-family="JetBrains Mono, monospace" font-size="12" fill="#BFC4CF">[ok] services initialized</text>
+  <text x="858" y="262" font-family="JetBrains Mono, monospace" font-size="12" fill="#BFC4CF">[ok] data channels linked</text>
+  <text x="858" y="286" font-family="JetBrains Mono, monospace" font-size="12" fill="#BFC4CF">[ok] deployment window ready</text>
+  <text x="858" y="322" font-family="JetBrains Mono, monospace" font-size="12" fill="#9BA1AE">throughput</text>
+  <rect x="858" y="334" width="194" height="8" rx="4" fill="#2A2C31"/>
+  <rect x="858" y="334" width="42" height="8" rx="4" fill="#AAB1BD">
+    <animate attributeName="width" values="42;176;42" dur="5s" repeatCount="indefinite"/>
+  </rect>
 
   <line x1="80" y1="500" x2="1120" y2="500" stroke="url(#line)" stroke-width="2"/>
 
