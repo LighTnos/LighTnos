@@ -1,0 +1,93 @@
+<svg width="1200" height="2280" viewBox="0 0 1200 2280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0E0E10"/>
+      <stop offset="100%" stop-color="#0A0A0B"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7E6650"/>
+      <stop offset="50%" stop-color="#C49A5A"/>
+      <stop offset="100%" stop-color="#7E6650"/>
+    </linearGradient>
+    <linearGradient id="soft" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#171719"/>
+      <stop offset="100%" stop-color="#111214"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="28" y="24" width="1144" height="2232" rx="28" fill="url(#bg)" stroke="#242427"/>
+
+  <rect x="80" y="72" width="1040" height="380" rx="20" fill="url(#soft)" stroke="#2C2D31"/>
+  <text x="120" y="132" font-family="Georgia, serif" font-size="26" fill="#D6CEC3">The Midnight Coder</text>
+  <text x="120" y="182" font-family="JetBrains Mono, monospace" font-size="58" fill="#ECE8E1">UDIT AGRAWAL</text>
+  <text x="120" y="218" font-family="JetBrains Mono, monospace" font-size="18" fill="#B7AEA3">Software Engineer Intern @ DrongoAI</text>
+  <text x="120" y="272" font-family="JetBrains Mono, monospace" font-size="16" fill="#D8D3CC">guest@midnight:~$ init --focus</text>
+  <text x="120" y="304" font-family="JetBrains Mono, monospace" font-size="16" fill="#C7C1B8">Loading systems thinking...</text>
+  <text x="120" y="334" font-family="JetBrains Mono, monospace" font-size="16" fill="#C7C1B8">Compiling interfaces, APIs, and product intent...</text>
+  <text x="120" y="364" font-family="JetBrains Mono, monospace" font-size="16" fill="#C7C1B8">Status: steady.</text>
+
+  <path d="M820 132 C900 92, 1030 120, 1050 220 C1066 296, 1008 354, 940 364 C872 374, 824 336, 818 284" fill="none" stroke="#3E362D" stroke-width="2"/>
+  <rect x="876" y="208" width="150" height="120" rx="18" fill="#191A1D" stroke="#363840"/>
+  <path d="M892 252 H1010 L1016 300 Q1018 312 1008 316 H900 Q890 312 892 300 Z" fill="#9B6730">
+    <animate attributeName="d" values="M892 252 H1010 L1016 300 Q1018 312 1008 316 H900 Q890 312 892 300 Z;M892 257 H1010 L1016 302 Q1018 314 1008 318 H900 Q890 314 892 302 Z;M892 252 H1010 L1016 300 Q1018 312 1008 316 H900 Q890 312 892 300 Z" dur="5s" repeatCount="indefinite"/>
+  </path>
+
+  <line x1="80" y1="500" x2="1120" y2="500" stroke="url(#line)" stroke-width="2"/>
+
+  <text x="120" y="570" font-family="Georgia, serif" font-size="30" fill="#DDD6CC">I build product-focused software with a systems mindset.</text>
+  <text x="120" y="610" font-family="JetBrains Mono, monospace" font-size="17" fill="#BEB7AD">Clean architecture, reliable delivery, and thoughtful interfaces.</text>
+  <text x="120" y="640" font-family="JetBrains Mono, monospace" font-size="17" fill="#BEB7AD">Modern JavaScript/TypeScript, backend services, and applied ML exploration.</text>
+
+  <line x1="80" y1="700" x2="1120" y2="700" stroke="#27282B" stroke-width="1"/>
+
+  <text x="120" y="760" font-family="JetBrains Mono, monospace" font-size="20" fill="#D6CEC3">Stack</text>
+  <text x="120" y="798" font-family="JetBrains Mono, monospace" font-size="16" fill="#C8C2B9">Frontend : React · Next.js · JavaScript · TypeScript · Tailwind CSS</text>
+  <text x="120" y="828" font-family="JetBrains Mono, monospace" font-size="16" fill="#C8C2B9">Backend  : Node.js · Express.js · MongoDB</text>
+  <text x="120" y="858" font-family="JetBrains Mono, monospace" font-size="16" fill="#C8C2B9">Other    : Python · Git · Docker · AWS</text>
+  <text x="120" y="888" font-family="JetBrains Mono, monospace" font-size="16" fill="#C8C2B9">Exploring: AI/ML · system design · cloud technologies</text>
+
+  <line x1="80" y1="942" x2="1120" y2="942" stroke="url(#line)" stroke-width="2"/>
+
+  <text x="120" y="1010" font-family="JetBrains Mono, monospace" font-size="20" fill="#D6CEC3">Selected Work</text>
+
+  <rect x="120" y="1042" width="470" height="214" rx="14" fill="#141518" stroke="#2A2B2F"/>
+  <text x="146" y="1080" font-family="JetBrains Mono, monospace" font-size="20" fill="#ECE8E1">NewsX</text>
+  <text x="146" y="1110" font-family="JetBrains Mono, monospace" font-size="14" fill="#BEB7AD">Interactive 3D globe for country-precise world news,</text>
+  <text x="146" y="1132" font-family="JetBrains Mono, monospace" font-size="14" fill="#BEB7AD">full article reading, and translation.</text>
+  <text x="146" y="1172" font-family="JetBrains Mono, monospace" font-size="13" fill="#9E8F7A">Next.js · TypeScript · Three.js · Tailwind CSS</text>
+
+  <rect x="610" y="1042" width="470" height="214" rx="14" fill="#141518" stroke="#2A2B2F"/>
+  <text x="636" y="1080" font-family="JetBrains Mono, monospace" font-size="20" fill="#ECE8E1">VitalTwin</text>
+  <text x="636" y="1110" font-family="JetBrains Mono, monospace" font-size="14" fill="#BEB7AD">AI health digital twin with 3D dashboard</text>
+  <text x="636" y="1132" font-family="JetBrains Mono, monospace" font-size="14" fill="#BEB7AD">and ML-backed simulation.</text>
+  <text x="636" y="1172" font-family="JetBrains Mono, monospace" font-size="13" fill="#9E8F7A">Next.js · Python/FastAPI · ML · Three.js</text>
+
+  <rect x="120" y="1280" width="470" height="214" rx="14" fill="#141518" stroke="#2A2B2F"/>
+  <text x="146" y="1318" font-family="JetBrains Mono, monospace" font-size="20" fill="#ECE8E1">Portfolio</text>
+  <text x="146" y="1348" font-family="JetBrains Mono, monospace" font-size="14" fill="#BEB7AD">Full-stack portfolio platform with admin dashboard,</text>
+  <text x="146" y="1370" font-family="JetBrains Mono, monospace" font-size="14" fill="#BEB7AD">analytics, and AI-assisted repo analysis.</text>
+  <text x="146" y="1410" font-family="JetBrains Mono, monospace" font-size="13" fill="#9E8F7A">React · Node.js · Express · MongoDB · Groq AI</text>
+
+  <rect x="610" y="1280" width="470" height="214" rx="14" fill="#141518" stroke="#2A2B2F"/>
+  <text x="636" y="1318" font-family="JetBrains Mono, monospace" font-size="20" fill="#ECE8E1">The-Planets</text>
+  <text x="636" y="1348" font-family="JetBrains Mono, monospace" font-size="14" fill="#BEB7AD">Immersive 3D planet explorer with cinematic</text>
+  <text x="636" y="1370" font-family="JetBrains Mono, monospace" font-size="14" fill="#BEB7AD">scroll-based transitions.</text>
+  <text x="636" y="1410" font-family="JetBrains Mono, monospace" font-size="13" fill="#9E8F7A">JavaScript · Three.js · Tailwind CSS · Vite</text>
+
+  <line x1="80" y1="1548" x2="1120" y2="1548" stroke="#27282B" stroke-width="1"/>
+
+  <text x="120" y="1614" font-family="JetBrains Mono, monospace" font-size="20" fill="#D6CEC3">Currently Exploring</text>
+  <text x="120" y="1650" font-family="JetBrains Mono, monospace" font-size="16" fill="#C8C2B9">AI/ML workflows · deeper system design practice · cloud architecture fundamentals</text>
+
+  <line x1="120" y1="1690" x2="1080" y2="1690" stroke="#2A2A2D" stroke-width="2"/>
+  <circle cx="150" cy="1690" r="5" fill="#C49A5A">
+    <animateMotion dur="5s" repeatCount="indefinite" path="M0,0 L900,0 L0,0"/>
+  </circle>
+
+  <line x1="80" y1="1760" x2="1120" y2="1760" stroke="url(#line)" stroke-width="2"/>
+
+  <text x="120" y="1830" font-family="JetBrains Mono, monospace" font-size="18" fill="#CFC8BE">linkedin.com/in/udit-agrawal-141292276</text>
+  <text x="120" y="1862" font-family="JetBrains Mono, monospace" font-size="18" fill="#CFC8BE">github.com/LighTnos</text>
+
+  <text x="600" y="2140" text-anchor="middle" font-family="Georgia, serif" font-size="136" letter-spacing="10" fill="#C5B8A5">LIGHTNOS</text>
+</svg>
