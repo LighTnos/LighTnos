@@ -1,0 +1,77 @@
+<svg width="1200" height="520" viewBox="0 0 1200 520" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0F1320"/>
+      <stop offset="100%" stop-color="#0A0C13"/>
+    </linearGradient>
+    <linearGradient id="accent1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#C5FF4A"/>
+      <stop offset="100%" stop-color="#7BC21E"/>
+    </linearGradient>
+    <linearGradient id="accent2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7BE0FF"/>
+      <stop offset="100%" stop-color="#3C9EC2"/>
+    </linearGradient>
+    <linearGradient id="accent3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFD38A"/>
+      <stop offset="100%" stop-color="#B77A2C"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="20" y="20" width="1160" height="480" rx="28" fill="#07090D" stroke="#202739"/>
+
+  <g>
+    <rect x="60" y="70" width="340" height="170" rx="22" fill="url(#panel)" stroke="#2A334A"/>
+    <rect x="80" y="92" width="180" height="26" rx="13" fill="url(#accent1)"/>
+    <text x="170" y="110" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#0B0D12">FRONTEND</text>
+    <text x="80" y="150" font-family="JetBrains Mono, monospace" font-size="15" fill="#E8EBF2">React</text>
+    <text x="80" y="178" font-family="JetBrains Mono, monospace" font-size="15" fill="#E8EBF2">Tailwind CSS</text>
+    <text x="80" y="206" font-family="JetBrains Mono, monospace" font-size="15" fill="#E8EBF2">HTML / CSS / Bootstrap</text>
+    <circle cx="345" cy="95" r="6" fill="#C5FF4A">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="1.6s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <g>
+    <rect x="430" y="70" width="340" height="170" rx="22" fill="url(#panel)" stroke="#2A334A"/>
+    <rect x="450" y="92" width="170" height="26" rx="13" fill="url(#accent2)"/>
+    <text x="535" y="110" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#0B0D12">BACKEND</text>
+    <text x="450" y="150" font-family="JetBrains Mono, monospace" font-size="15" fill="#E8EBF2">Node.js / Express</text>
+    <text x="450" y="178" font-family="JetBrains Mono, monospace" font-size="15" fill="#E8EBF2">MongoDB</text>
+    <text x="450" y="206" font-family="JetBrains Mono, monospace" font-size="15" fill="#E8EBF2">REST APIs</text>
+    <circle cx="715" cy="95" r="6" fill="#7BE0FF">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <g>
+    <rect x="800" y="70" width="340" height="170" rx="22" fill="url(#panel)" stroke="#2A334A"/>
+    <rect x="820" y="92" width="170" height="26" rx="13" fill="url(#accent3)"/>
+    <text x="905" y="110" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="#0B0D12">TOOLING</text>
+    <text x="820" y="150" font-family="JetBrains Mono, monospace" font-size="15" fill="#E8EBF2">Git / GitHub</text>
+    <text x="820" y="178" font-family="JetBrains Mono, monospace" font-size="15" fill="#E8EBF2">VS Code</text>
+    <text x="820" y="206" font-family="JetBrains Mono, monospace" font-size="15" fill="#E8EBF2">Java / C</text>
+    <circle cx="1085" cy="95" r="6" fill="#FFD38A">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <g>
+    <rect x="60" y="270" width="520" height="180" rx="22" fill="url(#panel)" stroke="#2A334A"/>
+    <text x="90" y="315" font-family="JetBrains Mono, monospace" font-size="17" fill="#C5FF4A">$ current_mission</text>
+    <text x="90" y="350" font-family="JetBrains Mono, monospace" font-size="16" fill="#E8EBF2">Ship production-grade MERN apps</text>
+    <text x="90" y="378" font-family="JetBrains Mono, monospace" font-size="16" fill="#E8EBF2">Improve system design thinking</text>
+    <text x="90" y="406" font-family="JetBrains Mono, monospace" font-size="16" fill="#E8EBF2">Build ML-backed product features</text>
+  </g>
+
+  <g>
+    <rect x="610" y="270" width="530" height="180" rx="22" fill="url(#panel)" stroke="#2A334A"/>
+    <text x="640" y="315" font-family="JetBrains Mono, monospace" font-size="17" fill="#7BE0FF">$ animation_level</text>
+    <text x="640" y="350" font-family="JetBrains Mono, monospace" font-size="16" fill="#E8EBF2">high</text>
+    <text x="640" y="378" font-family="JetBrains Mono, monospace" font-size="16" fill="#E8EBF2">bento-grid + terminal + 3D contrib visuals</text>
+    <rect x="640" y="403" width="430" height="12" rx="6" fill="#1B2030"/>
+    <rect x="640" y="403" width="80" height="12" rx="6" fill="#C5FF4A">
+      <animate attributeName="width" values="80;410;80" dur="3.6s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>
