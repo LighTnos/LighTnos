@@ -1,0 +1,9 @@
+<svg width="980" height="160" viewBox="0 0 980 160" xmlns="http://www.w3.org/2000/svg">
+  <rect x="12" y="12" width="956" height="136" rx="16" fill="#111113" stroke="#252529"/>
+  <text x="36" y="52" font-family="JetBrains Mono, monospace" font-size="15" fill="#CFC8BE">$ exploring --now</text>
+  <text x="36" y="84" font-family="JetBrains Mono, monospace" font-size="15" fill="#E7E3DC">AI/ML workflows · system design depth · cloud architecture fundamentals</text>
+  <line x1="36" y1="118" x2="944" y2="118" stroke="#2A2A2E" stroke-width="2"/>
+  <circle cx="54" cy="118" r="5" fill="#C49A5A">
+    <animateMotion dur="4.2s" repeatCount="indefinite" path="M0,0 L870,0"/>
+  </circle>
+</svg>
