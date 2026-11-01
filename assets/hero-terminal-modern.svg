@@ -1,0 +1,57 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#090C12"/>
+      <stop offset="100%" stop-color="#05070B"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7BE0FF"/>
+      <stop offset="100%" stop-color="#2F93B7"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#D1A157"/>
+      <stop offset="100%" stop-color="#7A5122"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="70" y="58" width="1060" height="584" rx="30" fill="url(#bg)" stroke="url(#gold)" stroke-width="2"/>
+  <text x="112" y="116" font-family="JetBrains Mono, monospace" font-size="13" fill="#7BE0FF">TERMINAL MODERN // SEMANTIC ANIMATION MODE</text>
+  <text x="112" y="186" font-family="JetBrains Mono, monospace" font-size="58" font-weight="700" fill="#EAF0FA">UDIT AGRAWAL</text>
+  <text x="114" y="224" font-family="JetBrains Mono, monospace" font-size="20" fill="#D1A157">Software Engineer Intern @ DrongoAI</text>
+
+  <rect x="112" y="256" width="650" height="318" rx="22" fill="#0E1523" stroke="#263550"/>
+
+  <text x="140" y="300" font-family="JetBrains Mono, monospace" font-size="16" fill="#7BE0FF">guest@LighTnos:~$ run profile_sync --live</text>
+  <rect x="470" y="288" width="10" height="16" fill="#7BE0FF">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1;1" dur="6s" repeatCount="indefinite"/>
+    <text x="140" y="340" font-family="JetBrains Mono, monospace" font-size="17" fill="#EAF0FA">[1/4] loading identity... ok</text>
+    <text x="140" y="375" font-family="JetBrains Mono, monospace" font-size="17" fill="#EAF0FA">[2/4] loading stack... React, Node, Express, MongoDB</text>
+    <text x="140" y="410" font-family="JetBrains Mono, monospace" font-size="17" fill="#EAF0FA">[3/4] loading mission... ship reliable product features</text>
+    <text x="140" y="445" font-family="JetBrains Mono, monospace" font-size="17" fill="#EAF0FA">[4/4] loading learning track... python + ml systems</text>
+  </g>
+
+  <text x="140" y="505" font-family="JetBrains Mono, monospace" font-size="16" fill="#D1A157">status: synchronized · focused · shipping</text>
+
+  <g transform="translate(800 180)">
+    <rect x="0" y="0" width="260" height="300" rx="22" fill="#0D131F" stroke="#2A3650"/>
+    <text x="24" y="36" font-family="JetBrains Mono, monospace" font-size="14" fill="#7BE0FF">runtime_signal</text>
+    <rect x="24" y="56" width="212" height="10" rx="5" fill="#17263B"/>
+    <rect x="24" y="56" width="36" height="10" rx="5" fill="url(#cyan)">
+      <animate attributeName="width" values="36;196;36" dur="2.6s" repeatCount="indefinite"/>
+    </rect>
+    <text x="24" y="96" font-family="JetBrains Mono, monospace" font-size="14" fill="#D1A157">build_velocity</text>
+    <rect x="24" y="108" width="212" height="10" rx="5" fill="#17263B"/>
+    <rect x="24" y="108" width="42" height="10" rx="5" fill="url(#gold)">
+      <animate attributeName="width" values="42;184;42" dur="2.6s" begin="0.4s" repeatCount="indefinite"/>
+    </rect>
+    <text x="24" y="148" font-family="JetBrains Mono, monospace" font-size="14" fill="#7BE0FF">ml_learning_curve</text>
+    <rect x="24" y="160" width="212" height="10" rx="5" fill="#17263B"/>
+    <rect x="24" y="160" width="28" height="10" rx="5" fill="url(#cyan)">
+      <animate attributeName="width" values="28;160;28" dur="2.6s" begin="0.8s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>
