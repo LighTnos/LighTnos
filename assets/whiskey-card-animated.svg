@@ -1,96 +1,95 @@
-<svg width="1200" height="680" viewBox="0 0 1200 680" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="700" viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0B0D12"/>
-      <stop offset="100%" stop-color="#07090E"/>
+      <stop offset="0%" stop-color="#0A0C11"/>
+      <stop offset="100%" stop-color="#05070B"/>
     </linearGradient>
-    <linearGradient id="frame" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#DDAA4B"/>
-      <stop offset="50%" stop-color="#7B5422"/>
-      <stop offset="100%" stop-color="#DDAA4B"/>
+    <linearGradient id="accentGold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#D6A85A"/>
+      <stop offset="100%" stop-color="#7A5120"/>
+    </linearGradient>
+    <linearGradient id="accentCyan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#59D6FF"/>
+      <stop offset="100%" stop-color="#2A85A8"/>
+    </linearGradient>
+    <linearGradient id="amber" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F3C57C"/>
+      <stop offset="50%" stop-color="#CF8C2F"/>
+      <stop offset="100%" stop-color="#7C4210"/>
     </linearGradient>
     <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#DDE8FF" stop-opacity="0.32"/>
-      <stop offset="100%" stop-color="#6B7D9A" stop-opacity="0.14"/>
+      <stop offset="0%" stop-color="#DCE9FF" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#627DA2" stop-opacity="0.12"/>
     </linearGradient>
-    <linearGradient id="liquid" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#F6C77D"/>
-      <stop offset="45%" stop-color="#D79335"/>
-      <stop offset="100%" stop-color="#8F4E12"/>
-    </linearGradient>
-    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="10"/>
-    </filter>
-    <filter id="shadow" x="-20%" y="-20%" width="160%" height="160%">
-      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#000000" flood-opacity="0.45"/>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12"/>
     </filter>
   </defs>
 
-  <rect x="70" y="50" width="1060" height="580" rx="34" fill="url(#bg)" stroke="url(#frame)" stroke-width="2"/>
+  <rect x="60" y="50" width="1080" height="600" rx="30" fill="url(#bg)" stroke="url(#accentGold)" stroke-width="2"/>
 
-  <rect x="112" y="92" width="350" height="28" rx="14" fill="#121725"/>
-  <text x="287" y="111" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" letter-spacing="1.2" fill="#DDAA4B">CYBER RESERVE DEVELOPER CARD</text>
+  <rect x="100" y="90" width="360" height="30" rx="15" fill="#141A28" stroke="#2A3246"/>
+  <text x="280" y="110" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" letter-spacing="1.1" fill="#D6A85A">TERMINAL PREMIUM PROFILE</text>
 
-  <text x="112" y="182" font-family="JetBrains Mono, monospace" font-size="58" font-weight="700" fill="#E9ECF4">UDIT AGRAWAL</text>
-  <text x="114" y="220" font-family="JetBrains Mono, monospace" font-size="20" fill="#5ED8FF">Software Engineer Intern @ DrongoAI</text>
+  <text x="100" y="190" font-family="JetBrains Mono, monospace" font-size="60" font-weight="700" fill="#E8ECF5">UDIT AGRAWAL</text>
+  <text x="102" y="228" font-family="JetBrains Mono, monospace" font-size="20" fill="#59D6FF">Software Engineer Intern @ DrongoAI</text>
 
-  <rect x="112" y="254" width="500" height="296" rx="24" fill="#0F1420" stroke="#27324A"/>
-  <text x="140" y="295" font-family="JetBrains Mono, monospace" font-size="16" fill="#DDAA4B">$ profile --status</text>
-  <text x="140" y="328" font-family="JetBrains Mono, monospace" font-size="18" fill="#E9ECF4">MERN engineering + clean architecture</text>
-  <text x="140" y="374" font-family="JetBrains Mono, monospace" font-size="16" fill="#DDAA4B">$ velocity --mode</text>
-  <text x="140" y="407" font-family="JetBrains Mono, monospace" font-size="18" fill="#E9ECF4">ship fast, keep systems maintainable</text>
-  <text x="140" y="453" font-family="JetBrains Mono, monospace" font-size="16" fill="#DDAA4B">$ research --track</text>
-  <text x="140" y="486" font-family="JetBrains Mono, monospace" font-size="18" fill="#E9ECF4">python for ml-driven product features</text>
+  <rect x="100" y="258" width="560" height="308" rx="22" fill="#0E1320" stroke="#29324A"/>
+  <text x="130" y="300" font-family="JetBrains Mono, monospace" font-size="16" fill="#D6A85A">$ profile --readout</text>
+  <text x="130" y="334" font-family="JetBrains Mono, monospace" font-size="18" fill="#E8ECF5">stack : React · Node.js · Express · MongoDB · Tailwind</text>
+  <text x="130" y="380" font-family="JetBrains Mono, monospace" font-size="18" fill="#E8ECF5">focus : clean architecture + fast delivery</text>
+  <text x="130" y="426" font-family="JetBrains Mono, monospace" font-size="18" fill="#E8ECF5">learning : python for ml systems</text>
+  <text x="130" y="472" font-family="JetBrains Mono, monospace" font-size="18" fill="#E8ECF5">state : high intensity / deep work</text>
+  <text x="130" y="532" font-family="JetBrains Mono, monospace" font-size="14" fill="#7F8AA5">id: LTN-DRG-PRM-01</text>
 
-  <g transform="translate(690 132)" filter="url(#shadow)">
-    <ellipse cx="190" cy="350" rx="170" ry="28" fill="#040507"/>
-    <ellipse cx="190" cy="350" rx="120" ry="16" fill="#0D1017"/>
+  <g transform="translate(730 145)">
+    <ellipse cx="170" cy="380" rx="160" ry="28" fill="#040507"/>
+    <ellipse cx="170" cy="380" rx="110" ry="16" fill="#0A0D13"/>
 
-    <path d="M95 88 C100 64, 125 52, 154 52 H226 C255 52, 280 64, 285 88 L305 300 C309 327, 289 350, 261 350 H119 C91 350, 71 327, 75 300 Z"
-      fill="url(#glass)" stroke="#9AB0D3" stroke-opacity="0.45" stroke-width="2"/>
-
-    <path d="M106 186 C114 173, 132 165, 152 165 H228 C248 165, 266 173, 274 186 L286 297 C289 316, 275 332, 255 332 H125 C105 332, 91 316, 94 297 Z"
-      fill="url(#liquid)">
-      <animate attributeName="d" dur="2.8s" repeatCount="indefinite"
-        values="
-        M106 186 C114 173, 132 165, 152 165 H228 C248 165, 266 173, 274 186 L286 297 C289 316, 275 332, 255 332 H125 C105 332, 91 316, 94 297 Z;
-        M106 191 C114 178, 132 170, 152 170 H228 C248 170, 266 178, 274 191 L286 299 C289 318, 275 334, 255 334 H125 C105 334, 91 318, 94 299 Z;
-        M106 186 C114 173, 132 165, 152 165 H228 C248 165, 266 173, 274 186 L286 297 C289 316, 275 332, 255 332 H125 C105 332, 91 316, 94 297 Z"/>
-    </path>
-
-    <path d="M116 190 C132 181, 248 181, 264 190" stroke="#FFE1B1" stroke-width="4" opacity="0.72">
-      <animate attributeName="d" dur="2.8s" repeatCount="indefinite"
-        values="
-        M116 190 C132 181, 248 181, 264 190;
-        M116 194 C132 185, 248 185, 264 194;
-        M116 190 C132 181, 248 181, 264 190"/>
-    </path>
-
-    <rect x="118" y="120" width="13" height="210" rx="6" fill="#D9E6FF" fill-opacity="0.48"/>
-    <rect x="250" y="120" width="10" height="200" rx="5" fill="#EBF3FF" fill-opacity="0.34"/>
-    <rect x="244" y="100" width="15" height="210" rx="7" fill="#D9E6FF" fill-opacity="0.28"/>
-
-    <rect x="136" y="215" width="28" height="28" rx="5" fill="#FFE7BF" fill-opacity="0.32" transform="rotate(-12 136 215)">
-      <animateTransform attributeName="transform" type="rotate" values="-12 150 229;-6 150 229;-12 150 229" dur="3.2s" repeatCount="indefinite"/>
-    </rect>
-    <rect x="224" y="238" width="24" height="24" rx="5" fill="#FFE7BF" fill-opacity="0.25" transform="rotate(8 224 238)">
-      <animateTransform attributeName="transform" type="rotate" values="8 236 250;14 236 250;8 236 250" dur="2.9s" repeatCount="indefinite"/>
-    </rect>
-
-    <ellipse cx="200" cy="92" rx="130" ry="72" fill="#57D6FF" fill-opacity="0.13" filter="url(#softGlow)">
-      <animate attributeName="opacity" values="0.18;0.35;0.18" dur="2.6s" repeatCount="indefinite"/>
+    <ellipse cx="170" cy="80" rx="150" ry="78" fill="#59D6FF" fill-opacity="0.12" filter="url(#blur)">
+      <animate attributeName="opacity" values="0.08;0.22;0.08" dur="2.8s" repeatCount="indefinite"/>
     </ellipse>
+
+    <path d="M62 96 C67 68, 95 54, 130 54 H210 C245 54, 273 68, 278 96 L302 322 C306 350, 285 376, 256 376 H84 C55 376, 34 350, 38 322 Z"
+      fill="url(#glass)" stroke="#9CB2D8" stroke-opacity="0.45" stroke-width="2"/>
+
+    <path d="M76 205 C84 191, 104 183, 126 183 H214 C236 183, 256 191, 264 205 L278 320 C281 340, 266 356, 246 356 H94 C74 356, 59 340, 62 320 Z"
+      fill="url(#amber)">
+      <animate attributeName="d" dur="2.4s" repeatCount="indefinite"
+        values="
+        M76 205 C84 191, 104 183, 126 183 H214 C236 183, 256 191, 264 205 L278 320 C281 340, 266 356, 246 356 H94 C74 356, 59 340, 62 320 Z;
+        M76 211 C84 197, 104 189, 126 189 H214 C236 189, 256 197, 264 211 L278 324 C281 344, 266 360, 246 360 H94 C74 360, 59 344, 62 324 Z;
+        M76 205 C84 191, 104 183, 126 183 H214 C236 183, 256 191, 264 205 L278 320 C281 340, 266 356, 246 356 H94 C74 356, 59 340, 62 320 Z"/>
+    </path>
+
+    <path d="M84 210 C100 201, 240 201, 256 210" stroke="#FFE2B6" stroke-width="4" opacity="0.7">
+      <animate attributeName="d" dur="2.4s" repeatCount="indefinite"
+        values="
+        M84 210 C100 201, 240 201, 256 210;
+        M84 216 C100 207, 240 207, 256 216;
+        M84 210 C100 201, 240 201, 256 210"/>
+    </path>
+
+    <rect x="95" y="142" width="12" height="205" rx="6" fill="#EAF3FF" fill-opacity="0.45"/>
+    <rect x="238" y="118" width="13" height="210" rx="6" fill="#EAF3FF" fill-opacity="0.30"/>
+
+    <rect x="118" y="246" width="24" height="24" rx="5" fill="#FCE2B9" fill-opacity="0.28">
+      <animateTransform attributeName="transform" type="translate" values="0 0;3 -3;0 0" dur="2.2s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="222" y="268" width="22" height="22" rx="5" fill="#FCE2B9" fill-opacity="0.22">
+      <animateTransform attributeName="transform" type="translate" values="0 0;-3 -4;0 0" dur="2.5s" repeatCount="indefinite"/>
+    </rect>
   </g>
 
-  <text x="750" y="560" font-family="JetBrains Mono, monospace" font-size="18" fill="#DDAA4B">WHISKEY • CODE • FOCUS</text>
-
-  <circle cx="1040" cy="112" r="3.2" fill="#57D6FF">
-    <animate attributeName="opacity" values="0.2;1;0.2" dur="1.8s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="1078" cy="136" r="2.8" fill="#DDAA4B">
-    <animate attributeName="opacity" values="0.3;1;0.3" dur="2.2s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="1102" cy="106" r="2.4" fill="#57D6FF">
-    <animate attributeName="opacity" values="0.2;1;0.2" dur="2.5s" repeatCount="indefinite"/>
-  </circle>
+  <g>
+    <circle cx="1060" cy="120" r="3" fill="#59D6FF">
+      <animate attributeName="opacity" values="0.25;1;0.25" dur="1.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1090" cy="145" r="2.6" fill="#D6A85A">
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="2.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1115" cy="110" r="2.2" fill="#59D6FF">
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
 </svg>
