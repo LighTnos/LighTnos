@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" shape-rendering="crispEdges" role="img" aria-label="EXPRESS">
+  <title>EXPRESS</title>
+<path d="M32 40h112v8h-112zM32 48h8v8h-8zM136 48h8v8h-8zM32 56h8v8h-8zM48 56h16v8h-16zM88 56h40v8h-40zM136 56h8v8h-8zM32 64h8v8h-8zM136 64h8v8h-8zM32 72h112v8h-112zM80 80h16v8h-16zM80 88h16v8h-16zM32 96h112v8h-112zM32 104h8v8h-8zM136 104h8v8h-8zM32 112h8v8h-8zM48 112h16v8h-16zM88 112h40v8h-40zM136 112h8v8h-8zM32 120h8v8h-8zM136 120h8v8h-8zM32 128h112v8h-112z" fill="#A81775"/>
+<path d="M40 104h16v8h-16z" fill="#D126FF"/>
+<path d="M80 48h40v8h-40zM80 104h40v8h-40z" fill="#0AD5FF"/>
+<path d="M24 32h112v8h-112zM24 40h8v8h-8zM128 40h8v8h-8zM24 48h8v8h-8zM128 48h8v8h-8zM24 56h8v8h-8zM128 56h8v8h-8zM24 64h112v8h-112zM24 88h112v8h-112zM24 96h8v8h-8zM128 96h8v8h-8zM24 104h8v8h-8zM128 104h8v8h-8zM24 112h8v8h-8zM128 112h8v8h-8zM24 120h112v8h-112z" fill="#7CF8FF"/>
+<path d="M40 48h16v8h-16zM72 72h16v8h-16zM72 80h16v8h-16z" fill="#FF3AA4"/>
+</svg>
