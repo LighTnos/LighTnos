@@ -35,7 +35,8 @@ $T = @{
   cyan = '#7CF8FF'; blue = '#0AD5FF'; ink = '#EAF0FF'
 }
 $W = 800          # page width in px (images are shown at this width)
-$PAD = 32         # inner horizontal padding of cards
+$M = 16           # page margin: the page surface shows around the cards
+$PAD = 28         # inner padding of cards (text starts at $M + $PAD)
 $GAP = 24         # vertical gap between cards
 $scan = '<pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="2" fill="#000529" opacity="0.45"/></pattern>'
 
@@ -98,6 +99,7 @@ $F['/'] = '0|....#,....#,...#.,..#..,.#...,#....,#....'
 $F['\'] = '0|#....,#....,.#...,..#..,...#.,....#,....#'
 $F['_'] = '8|#####'
 $F['>'] = '0|.#...,..#..,...#.,....#,...#.,..#..,.#...'
+$F['@'] = '0|.###.,#...#,#.###,#.#.#,#.###,#....,.####'
 
 function Seg($t, $c) { @{ t = $t; c = $c } }
 function TW($segs, $s) { $n = 0; foreach ($g in $segs) { $n += $g.t.Length }; $n * 6 * $s - $s }
@@ -293,29 +295,14 @@ $(GridPaths $ic.grid 16 16 8)  </g>
   Save "icons/$k.svg" $svg | Out-Null
 }
 
-# ============================== BUTTONS (clickable images) ==============================
-# 184 x 44 canvas: 168 x 44 button with 8px transparent margin left/right so two buttons sit 16px apart.
-function Button($file, $label, $accent) {
-  $tw = TW @((Seg $label $T.ink)) 3
-  $tx = [int](8 + (168 - $tw) / 2)
-  $pts = Poly 10 2 174 42 6
-  $svg = @"
-<svg xmlns="http://www.w3.org/2000/svg" width="184" height="44" viewBox="0 0 184 44" shape-rendering="crispEdges" role="img" aria-label="$label">
-  <title>$label</title>
-  <defs>$scan</defs>
-  <polygon points="$pts" fill="$($T.bg)" stroke="$accent" stroke-width="4"/>
-  <polygon points="$pts" fill="url(#scan)"/>
-$(Txt $tx 12 3 @((Seg $label $T.ink)) $true)</svg>
-"@
-  Save $file $svg
-}
-Button 'btn-linkedin.svg' 'LINKEDIN' $T.cyan
-Button 'btn-github.svg' 'GITHUB' $T.pink
+# ============================== PAGE SURFACE ==============================
+# Every image is full-bleed on this colour, so stacked images read as one continuous page.
+function Surface($h) { "  <rect width=""$W"" height=""$h"" fill=""$($T.deep)""/>`n" }
 
 # ============================== TOP: typing banner ==============================
 $lines = @("hey, i'm udit", 'i build for the web', 'ship fast, fix later', 'touch grass (soon)')
-$S = 6; $cell = 6 * $S; $dur = 16
-$topPad = 32; $bannerH = 120; $botPad = 24
+$S = 5; $cell = 6 * $S; $dur = 16
+$topPad = 24; $bannerH = 104; $botPad = 16
 $H1 = $topPad + $bannerH + $botPad
 $textY = $topPad + [int](($bannerH - 7 * $S) / 2)
 $clips = New-Object Text.StringBuilder
@@ -351,39 +338,68 @@ for ($k = 0; $k -lt $lines.Count; $k++) {
   [void]$body.AppendLine("    <rect x=""$x0"" y=""$textY"" width=""$(3 * $S)"" height=""$(7 * $S)"" fill=""$($T.pink)""><animate attributeName=""x"" calcMode=""discrete"" values=""$($cxs -join ';')"" keyTimes=""$kt"" dur=""${dur}s"" repeatCount=""indefinite""/><animate attributeName=""opacity"" calcMode=""discrete"" values=""1;0;1"" keyTimes=""0;0.5;1"" dur=""0.6s"" repeatCount=""indefinite""/></rect>")
   [void]$body.AppendLine('  </g>')
 }
-$pts = Poly 2 ($topPad + 2) ($W - 2) ($topPad + $bannerH - 2) 8
+$pts = Poly ($M + 2) ($topPad + 2) ($W - $M - 2) ($topPad + $bannerH - 2) 8
 $svg = @"
 <svg xmlns="http://www.w3.org/2000/svg" width="$W" height="$H1" viewBox="0 0 $W $H1" shape-rendering="crispEdges" role="img" aria-label="Typing animation: hey, i'm udit. i build for the web. ship fast, fix later. touch grass (soon).">
   <title>hey, i'm udit</title>
   <defs>$scan
 $($clips.ToString())  </defs>
-  <polygon points="$pts" fill="$($T.deep)" stroke="$($T.line2)" stroke-width="4"/>
+$(Surface $H1)  <polygon points="$pts" fill="$($T.bg)" stroke="$($T.line2)" stroke-width="4"/>
   <polygon points="$pts" fill="url(#scan)"/>
 $($body.ToString())</svg>
 "@
 Save 'page-top.svg' $svg
 
+# ============================== LINK BARS (each is one clickable image) ==============================
+# LinkedIn "in" badge, 16x16
+$liGrid = Sparse @{
+  1 = '.CCCCCCCCCCCCCC.'; 2 = '.CCCCCCCCCCCCCC.'; 3 = '.CCDDCCCCCCCCCC.'; 4 = '.CCDDCCCCCCCCCC.'; 5 = '.CCCCCCCCCCCCCC.'
+  6 = '.CCDDCCDDDDDDCC.'; 7 = '.CCDDCCDDDDDDCC.'; 8 = '.CCDDCCDDCCDDCC.'; 9 = '.CCDDCCDDCCDDCC.'
+  10 = '.CCDDCCDDCCDDCC.'; 11 = '.CCDDCCDDCCDDCC.'; 12 = '.CCDDCCDDCCDDCC.'; 13 = '.CCCCCCCCCCCCCC.'; 14 = '.CCCCCCCCCCCCCC.' }
+
+function LinkBar($file, $label, $handle, $accent, $grid) {
+  $ch = 44; $h = 52
+  $pts = Poly ($M + 2) 2 ($W - $M - 2) ($ch - 2) 6
+  $hs = @((Seg $handle $T.ink))
+  $labelX = $M + 16 + 32 + 14
+  $arrowX = $W - $M - 16 - 15
+  $handleX = $arrowX - 12 - (TW $hs 3)
+  $svg = @"
+<svg xmlns="http://www.w3.org/2000/svg" width="$W" height="$h" viewBox="0 0 $W $h" shape-rendering="crispEdges" role="img" aria-label="${label}: $handle">
+  <title>${label}: $handle</title>
+  <defs>$scan</defs>
+$(Surface $h)  <polygon points="$pts" fill="$($T.bg)" stroke="$accent" stroke-width="4"/>
+  <polygon points="$pts" fill="url(#scan)"/>
+  <g>
+$(GridPaths $grid ($M + 16) 6 2)  </g>
+$(Txt $labelX 12 3 @((Seg $label $T.cyan)) $true)$(Txt $handleX 12 3 $hs $false)$(Txt $arrowX 12 3 @((Seg '>' $accent)) $false)</svg>
+"@
+  Save $file $svg
+}
+LinkBar 'link-linkedin.svg' 'LINKEDIN' 'udit-agrawal' $T.cyan $liGrid
+LinkBar 'link-github.svg' 'GITHUB' '@LighTnos' $T.pink $icons['github'].grid
+
 # ============================== BODY: cards ==============================
-$titleS = 5; $bodyS = 4
-$pitch = 9 * $bodyS + 16
-$headH = 111          # card top -> first body line
-$footH = 32
+$titleS = 4; $bodyS = 3
+$pitch = 9 * $bodyS + 14
+$headH = 92           # card top -> first body line
+$footH = 28
 function BodyH($n) { ($n - 1) * $pitch + 9 * $bodyS }
 
 function CardFrame($y, $h, $accent, $title) {
-  $pts = Poly 2 ($y + 2) ($W - 2) ($y + $h - 2) 8
+  $pts = Poly ($M + 2) ($y + 2) ($W - $M - 2) ($y + $h - 2) 8
   $sb = New-Object Text.StringBuilder
   [void]$sb.AppendLine("  <polygon points=""$pts"" fill=""$($T.bg)"" stroke=""$($T.line)"" stroke-width=""4""/>")
   [void]$sb.AppendLine("  <polygon points=""$pts"" fill=""url(#scan)""/>")
-  [void]$sb.Append((Txt $PAD ($y + 28) $titleS @((Seg '// ' $accent), (Seg $title $T.cyan)) $true))
-  $dx = $W - $PAD - 56
-  [void]$sb.AppendLine("  <rect x=""$dx"" y=""$($y + 40)"" width=""12"" height=""12"" fill=""$($T.pink)""/><rect x=""$($dx + 22)"" y=""$($y + 40)"" width=""12"" height=""12"" fill=""$($T.magenta)""/><rect x=""$($dx + 44)"" y=""$($y + 40)"" width=""12"" height=""12"" fill=""$($T.cyan)""/>")
-  [void]$sb.AppendLine("  <path d=""M$PAD $($y + 81)H$($W - $PAD)"" stroke=""$accent"" stroke-width=""4"" stroke-dasharray=""12 8"" opacity=""0.7"" fill=""none""/>")
+  [void]$sb.Append((Txt ($M + $PAD) ($y + 24) $titleS @((Seg '// ' $accent), (Seg $title $T.cyan)) $true))
+  $dx = $W - $M - $PAD - 46
+  [void]$sb.AppendLine("  <rect x=""$dx"" y=""$($y + 33)"" width=""10"" height=""10"" fill=""$($T.pink)""/><rect x=""$($dx + 18)"" y=""$($y + 33)"" width=""10"" height=""10"" fill=""$($T.magenta)""/><rect x=""$($dx + 36)"" y=""$($y + 33)"" width=""10"" height=""10"" fill=""$($T.cyan)""/>")
+  [void]$sb.AppendLine("  <path d=""M$($M + $PAD) $($y + 68)H$($W - $M - $PAD)"" stroke=""$accent"" stroke-width=""4"" stroke-dasharray=""12 8"" opacity=""0.7"" fill=""none""/>")
   $sb.ToString()
 }
 function TextBlock($y0, $rows) {
   $sb = New-Object Text.StringBuilder
-  for ($i = 0; $i -lt $rows.Count; $i++) { [void]$sb.Append((Txt $PAD ($y0 + $i * $pitch) $bodyS $rows[$i] $false)) }
+  for ($i = 0; $i -lt $rows.Count; $i++) { [void]$sb.Append((Txt ($M + $PAD) ($y0 + $i * $pitch) $bodyS $rows[$i] $false)) }
   $sb.ToString()
 }
 
@@ -403,16 +419,15 @@ $thought = @(
   @((Seg '\_(._.)_/' $T.cyan))
 )
 foreach ($grp in $about, $now, $thought) {
-  foreach ($row in $grp) { if ((TW $row $bodyS) -gt ($W - 2 * $PAD)) { throw "line too wide: $(($row | ForEach-Object { $_.t }) -join '')" } }
+  foreach ($row in $grp) { if ((TW $row $bodyS) -gt ($W - 2 * $M - 2 * $PAD)) { throw "line too wide: $(($row | ForEach-Object { $_.t }) -join '')" } }
 }
 
 # tech stack grid: 6 + 5 icons, borderless, 122px cells
 $order = 'html', 'javascript', 'css', 'typescript', 'react', 'tailwind', 'nodejs', 'express', 'python', 'git', 'github'
-$cellW = 122; $iconScale = 5; $iconSize = 16 * $iconScale; $rowH = 108; $rowGap = 28
+$cellW = 122; $iconScale = 4; $iconSize = 16 * $iconScale; $rowH = 90; $rowGap = 24
 $stackH = 2 * $rowH + $rowGap
-$stack = New-Object Text.StringBuilder
 
-$y = 28
+$y = 16
 $bodySvg = New-Object Text.StringBuilder
 
 # about
@@ -432,10 +447,10 @@ for ($r = 0; $r -lt 2; $r++) {
     $ic = $icons[[string]$items[$i]]; $cx0 = $startX + $i * $cellW
     $lab = @((Seg $ic.label $T.cyan)); $lw = TW $lab 2
     [void]$bodySvg.AppendLine("  <g>")
-    [void]$bodySvg.AppendLine("    <animateTransform attributeName=""transform"" type=""translate"" calcMode=""discrete"" values=""0 0;0 -5;0 0"" keyTimes=""0;0.5;1"" dur=""2.4s"" begin=""-$(N (($r * 6 + $i) * 0.22))s"" repeatCount=""indefinite""/>")
+    [void]$bodySvg.AppendLine("    <animateTransform attributeName=""transform"" type=""translate"" calcMode=""discrete"" values=""0 0;0 -4;0 0"" keyTimes=""0;0.5;1"" dur=""2.4s"" begin=""-$(N (($r * 6 + $i) * 0.22))s"" repeatCount=""indefinite""/>")
     [void]$bodySvg.Append((GridPaths $ic.grid ($cx0 + [int](($cellW - $iconSize) / 2)) $ry $iconScale))
     [void]$bodySvg.AppendLine("  </g>")
-    [void]$bodySvg.Append((Txt ([int]($cx0 + ($cellW - $lw) / 2)) ($ry + $iconSize + 14) 2 $lab $true))
+    [void]$bodySvg.Append((Txt ([int]($cx0 + ($cellW - $lw) / 2)) ($ry + $iconSize + 12) 2 $lab $true))
   }
 }
 $y += $h + $GAP
@@ -452,13 +467,23 @@ $h = $headH + (BodyH $thought.Count) + $footH
 [void]$bodySvg.Append((TextBlock ($y + $headH) $thought))
 $y += $h
 
-$H2 = $y + $GAP
+$H2 = $y + 16
 $svg = @"
-<svg xmlns="http://www.w3.org/2000/svg" width="$W" height="$H2" viewBox="0 0 $W $H2" shape-rendering="crispEdges" role="img" aria-label="About me: hey, i'm udit, a web dev who learns by building and breaking things a little. Tech stack: HTML, CSS, JavaScript, React, TypeScript, Tailwind, Node.js, Express, Python, Git, GitHub. Currently: leveling up in typescript, messing around with python, always building new stuff. Random thought: it works on my machine.">
+<svg xmlns="http://www.w3.org/2000/svg" width="$W" height="$H2" viewBox="0 0 $W $H2" shape-rendering="crispEdges" role="img" aria-label="About me: hey, i'm udit, a web dev who learns by building and breaking things a little. Tech stack: HTML, JavaScript, CSS, TypeScript, React, Tailwind, Node.js, Express, Python, Git, GitHub. Currently: leveling up in typescript, messing around with python, always building new stuff. Random thought: it works on my machine.">
   <title>About, tech stack, currently, random thought</title>
   <defs>$scan</defs>
-$($bodySvg.ToString())</svg>
+$(Surface $H2)$($bodySvg.ToString())</svg>
 "@
 Save 'page-body.svg' $svg
 
-"page-top height: $H1   page-body height: $H2"
+# ============================== END CAP (closes the page under the snake graph) ==============================
+$he = 16
+$endPts = "0,0 $W,0 $W,$($he - 8) $($W - 8),$($he - 8) $($W - 8),$he 8,$he 8,$($he - 8) 0,$($he - 8)"
+$svg = @"
+<svg xmlns="http://www.w3.org/2000/svg" width="$W" height="$he" viewBox="0 0 $W $he" shape-rendering="crispEdges" aria-hidden="true">
+  <polygon points="$endPts" fill="$($T.deep)"/>
+</svg>
+"@
+Save 'page-end.svg' $svg
+
+"page-top: $H1 px   page-body: $H2 px"

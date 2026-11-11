@@ -16,8 +16,23 @@ jobs:
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-contribution-grid-snake.svg?color_snake=%23ff3aa4&color_dots=%23ebedf0,%23d9cbff,%23a98bff,%237b07ff,%232f07d1
             dist/github-contribution-grid-snake-dark.svg?color_snake=%23ff3aa4&color_dots=%23190a48,%232f07d1,%237b07ff,%23d126ff,%237cf8ff
+
+      # snk draws on a transparent background. Paint it with the page colour so the
+      # graph sits on the same surface as the rest of the README.
+      - name: Add the page background to the snake
+        run: |
+          python3 - <<'PY'
+          import pathlib, re
+          for f in pathlib.Path("dist").glob("*.svg"):
+              s = f.read_text()
+              m = re.search(r'viewBox="\s*(-?[\d.]+)[ ,]+(-?[\d.]+)[ ,]+([\d.]+)[ ,]+([\d.]+)', s)
+              if not m:
+                  continue
+              x, y, w, h = m.groups()
+              rect = f'<rect x="{x}" y="{y}" width="{w}" height="{h}" fill="#0F0932"/>'
+              f.write_text(re.sub(r'(<svg[^>]*>)', lambda mm: mm.group(1) + rect, s, count=1))
+          PY
 
       - uses: crazy-max/ghaction-github-pages@v4
         with:
